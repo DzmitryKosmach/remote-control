@@ -1,0 +1,31 @@
+{
+    "name": "ws_task",
+    "version": "1.0.0",
+    "description": "Template for the WebSocket remote control task",
+    "scripts": {
+        "start": "ts-node index.ts",
+        "start:dev": "nodemon",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Dzmitry Kosmach",
+    "keywords": [],
+    "license": "ISC",
+    "devDependencies": {
+        "@types/jest": "^28.1.2",
+        "@types/supertest": "^2.0.12",
+        "@types/uuid": "^8.3.4",
+        "@types/ws": "^8.5.3",
+        "eslint": "^8.17.0",
+        "eslint-config-base": "^1.0.0",
+        "eslint-config-prettier": "^8.5.0",
+        "nodemon": "^2.0.16",
+        "prettier": "^2.7.0",
+        "ts-node": "^10.8.1"
+    },
+    "dependencies": {
+        "dotenv": "^16.0.1",
+        "jimp": "^0.16.1",
+        "robotjs": "^0.6.0",
+        "ws": "^8.8.0"
+    }
+}
