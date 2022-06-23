@@ -7,4 +7,5 @@ export const enum Commands {
   MOUSE_RIGHT = "mouse_right",
   MOUSE_UP = "mouse_up",
   MOUSE_DOWN = "mouse_down",
+  PRINT_SCREEN = "prnt_scrn",
 }
