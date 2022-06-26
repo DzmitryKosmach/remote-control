@@ -11,19 +11,9 @@ import {
 
 export const performCommand = async (data: RawData, ws: WebSocket) => {
   try {
-    //https://github.com/websockets/ws
-    /* const messageStream = createWebSocketStream(ws, {
-      encoding: "utf8",
-      objectMode: true,
-      writableObjectMode: true,
-    }); */
-
-    //messageStream.pipe(ws.);
-
     const { command, firstParam, secondParam } = parseParams(data);
     switch (command) {
       case Commands.DRAW_CIRCLE:
-        //await getUsers(req, res);
         const radius = firstParam!;
         ws.send(Commands.DRAW_CIRCLE);
         performWithLeftMouseButton(drawCircle, radius);
